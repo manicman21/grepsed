@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Grep Sed</title>
+        <script src="js/grepsed.js"></script>
+        <script src="js/grepsed_class.js"></script>
+        <link rel="stylesheet" href="css/grepsed.css">
+    </head>
+    <body>
+        <div id="container">
+            <h1>SED/GREP String Converter</h1>
+            <div>
+            <input type="text" id="grep_sed_text" placeholder="Grep Search String"/> <input type="text" class="file_ext_input" id="grep_file_ext" placeholder="i.e. *, .js, *.js, .php, *.php or file_name.php"/> <input type="checkbox" id="write_grep_find_command" /> Write Find Command <input type="checkbox" id="grep_perl_regex" /> Use Perl RegExp <input type="checkbox" id="grep_case_insensitive" /> Case In-Sensitive <input type="checkbox" id="grep_print_maatching_only" /> Print Matching Text Only <input type="checkbox" id="grep_word_bound" /> Word Bound Match <input type="checkbox" id="grep_word_count" /> Get Word Count 
+            <br>
+            <textarea id="pcregrep_sed_text" placeholder="Pcregrep Search String"></textarea> <input type="checkbox" id="pcregrep_multi_line" /> Search Multi Line  <input type="checkbox" id="pcregrep_case_insensitive" /> Case In-Sensitive <input type="checkbox" id="pcregrep_print_maatching_only" /> Print Matching Text Only 
+            <br>
+            <button id="get_string_grep">Get Grep String</button>
+            <header>Grep Command</header>
+            <div id="grep_div"></div>
+            </div>
+            <div>
+                <input type="text" id="sed_text_to_search" placeholder="SED Search String" /> <input type="text" id="sed_text_to_replace" placeholder="SED Replace String "/> <input type="text" class="file_ext_input" id="sed_file_ext" placeholder="i.e. *, .js, *.js, .php, *.php or file_name.php"/> <input type="checkbox" id="write_find_command" /> Write Find Command <input type="checkbox" id="sed_word_bound" /> Word Bound Match <input type="checkbox" id="write_sed_file" /> Write To File <input type="checkbox" id="delete_matching_line" /> Delete Matching Line
+            <br>
+            <button id="get_string_sed">Get SED String</button>
+            <header>SED Command</header>
+             <div id="sed_div"></div>
+            </div>
+        </div>
+    </body>
+</html>
